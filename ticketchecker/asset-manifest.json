@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3022f2cb.css",
+    "main.js": "/static/js/main.9d34b452.js",
+    "static/js/453.87d01e71.chunk.js": "/static/js/453.87d01e71.chunk.js",
+    "static/media/against _rabbits.png": "/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
+    "static/media/button_move.png": "/static/media/button_move.520843e0c14e694781d1.png",
+    "index.html": "/index.html",
+    "main.3022f2cb.css.map": "/static/css/main.3022f2cb.css.map",
+    "main.9d34b452.js.map": "/static/js/main.9d34b452.js.map",
+    "453.87d01e71.chunk.js.map": "/static/js/453.87d01e71.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3022f2cb.css",
+    "static/js/main.9d34b452.js"
+  ]
+}
