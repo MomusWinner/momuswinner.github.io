@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/joystick/static/css/main.605874cb.css",
-    "main.js": "/joystick/static/js/main.4858f04f.js",
+    "main.css": "/joystick/static/css/main.ca7bfcf3.css",
+    "main.js": "/joystick/static/js/main.ed13c6fc.js",
     "static/js/453.c937b24c.chunk.js": "/joystick/static/js/453.c937b24c.chunk.js",
-    "static/media/against _rabbits.png": "/joystick/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
     "static/media/left-controller-panel.svg": "/joystick/static/media/left-controller-panel.e0cc448c3054dd56ff47.svg",
     "static/media/right-controller-panel.svg": "/joystick/static/media/right-controller-panel.6f451058404570319988.svg",
     "static/media/return-to-joystick.svg": "/joystick/static/media/return-to-joystick.71e5a6aba69d30ea6b88.svg",
     "index.html": "/joystick/index.html",
     "static/media/left-slider.svg": "/joystick/static/media/left-slider.75bec73e1676a3b60828.svg",
-    "static/media/right_button.svg": "/joystick/static/media/right_button.5cdb015397486cc0a187.svg",
-    "static/media/left_button.svg": "/joystick/static/media/left_button.9d4cfe18b5fa351bbec5.svg",
-    "static/media/interact_button.svg": "/joystick/static/media/interact_button.1ea9c67ec907907b0f50.svg",
-    "main.605874cb.css.map": "/joystick/static/css/main.605874cb.css.map",
-    "main.4858f04f.js.map": "/joystick/static/js/main.4858f04f.js.map",
+    "main.ca7bfcf3.css.map": "/joystick/static/css/main.ca7bfcf3.css.map",
+    "main.ed13c6fc.js.map": "/joystick/static/js/main.ed13c6fc.js.map",
     "453.c937b24c.chunk.js.map": "/joystick/static/js/453.c937b24c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.605874cb.css",
-    "static/js/main.4858f04f.js"
+    "static/css/main.ca7bfcf3.css",
+    "static/js/main.ed13c6fc.js"
   ]
 }
