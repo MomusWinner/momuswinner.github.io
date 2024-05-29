@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/ticketchecker/static/css/main.91fdbf18.css",
-    "main.js": "/ticketchecker/static/js/main.397509de.js",
+    "main.css": "/ticketchecker/static/css/main.db1fcf75.css",
+    "main.js": "/ticketchecker/static/js/main.b10ebdf0.js",
     "static/js/453.87d01e71.chunk.js": "/ticketchecker/static/js/453.87d01e71.chunk.js",
     "static/media/against _rabbits.png": "/ticketchecker/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
-    "static/media/button_move.png": "/ticketchecker/static/media/button_move.520843e0c14e694781d1.png",
     "index.html": "/ticketchecker/index.html",
-    "main.91fdbf18.css.map": "/ticketchecker/static/css/main.91fdbf18.css.map",
-    "main.397509de.js.map": "/ticketchecker/static/js/main.397509de.js.map",
+    "static/media/right_button.svg": "/ticketchecker/static/media/right_button.271bf5f29f30586094eb.svg",
+    "static/media/left_button.svg": "/ticketchecker/static/media/left_button.9c908d280391ab1fc417.svg",
+    "static/media/interact_button.svg": "/ticketchecker/static/media/interact_button.c74b3aa3ef14e8beb551.svg",
+    "main.db1fcf75.css.map": "/ticketchecker/static/css/main.db1fcf75.css.map",
+    "main.b10ebdf0.js.map": "/ticketchecker/static/js/main.b10ebdf0.js.map",
     "453.87d01e71.chunk.js.map": "/ticketchecker/static/js/453.87d01e71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91fdbf18.css",
-    "static/js/main.397509de.js"
+    "static/css/main.db1fcf75.css",
+    "static/js/main.b10ebdf0.js"
   ]
 }
