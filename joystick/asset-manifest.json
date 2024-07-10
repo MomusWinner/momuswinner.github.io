@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/joystick/static/css/main.de22c8ba.css",
-    "main.js": "/joystick/static/js/main.e6ad972c.js",
+    "main.css": "/joystick/static/css/main.23cd1dcc.css",
+    "main.js": "/joystick/static/js/main.5a452f32.js",
     "static/js/453.c937b24c.chunk.js": "/joystick/static/js/453.c937b24c.chunk.js",
     "static/media/against _rabbits.png": "/joystick/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
-    "static/media/left-controller-panel.svg": "/joystick/static/media/left-controller-panel.e0cc448c3054dd56ff47.svg",
-    "static/media/right-controller-panel.svg": "/joystick/static/media/right-controller-panel.6f451058404570319988.svg",
-    "static/media/return-to-joystick.svg": "/joystick/static/media/return-to-joystick.71e5a6aba69d30ea6b88.svg",
+    "static/media/left-controller-panel.svg": "/joystick/static/media/left-controller-panel.e1f2df2fd7719ed36069.svg",
+    "static/media/right-controller-panel.svg": "/joystick/static/media/right-controller-panel.b4a2eea64639738268b3.svg",
+    "static/media/return-to-joystick.svg": "/joystick/static/media/return-to-joystick.1c36380de350b1d2814f.svg",
+    "static/media/endPipe.svg": "/joystick/static/media/endPipe.5eacdb8fe558c0d8ee94392297403bd1.svg",
     "index.html": "/joystick/index.html",
-    "static/media/left-slider.svg": "/joystick/static/media/left-slider.75bec73e1676a3b60828.svg",
-    "static/media/right_button.svg": "/joystick/static/media/right_button.5cdb015397486cc0a187.svg",
-    "static/media/left_button.svg": "/joystick/static/media/left_button.9d4cfe18b5fa351bbec5.svg",
-    "static/media/interact_button.svg": "/joystick/static/media/interact_button.1ea9c67ec907907b0f50.svg",
-    "main.de22c8ba.css.map": "/joystick/static/css/main.de22c8ba.css.map",
-    "main.e6ad972c.js.map": "/joystick/static/js/main.e6ad972c.js.map",
+    "static/media/curvePipe.svg": "/joystick/static/media/curvePipe.c82a64566c9dbbc727e0a0268fc26507.svg",
+    "static/media/left-slider.svg": "/joystick/static/media/left-slider.2317380255a0e6a281aa.svg",
+    "static/media/right_button.svg": "/joystick/static/media/right_button.271bf5f29f30586094eb.svg",
+    "static/media/left_button.svg": "/joystick/static/media/left_button.9c908d280391ab1fc417.svg",
+    "static/media/interact_button.svg": "/joystick/static/media/interact_button.c74b3aa3ef14e8beb551.svg",
+    "static/media/linePipe.svg": "/joystick/static/media/linePipe.74ab6032e254a6ed3ccfac20343e5dbc.svg",
+    "main.23cd1dcc.css.map": "/joystick/static/css/main.23cd1dcc.css.map",
+    "main.5a452f32.js.map": "/joystick/static/js/main.5a452f32.js.map",
     "453.c937b24c.chunk.js.map": "/joystick/static/js/453.c937b24c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de22c8ba.css",
-    "static/js/main.e6ad972c.js"
+    "static/css/main.23cd1dcc.css",
+    "static/js/main.5a452f32.js"
   ]
 }
