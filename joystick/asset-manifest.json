@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/joystick/static/css/main.23cd1dcc.css",
-    "main.js": "/joystick/static/js/main.5a452f32.js",
+    "main.js": "/joystick/static/js/main.cec1fb1d.js",
     "static/js/453.c937b24c.chunk.js": "/joystick/static/js/453.c937b24c.chunk.js",
     "static/media/against _rabbits.png": "/joystick/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
     "static/media/left-controller-panel.svg": "/joystick/static/media/left-controller-panel.e1f2df2fd7719ed36069.svg",
@@ -16,11 +16,11 @@
     "static/media/interact_button.svg": "/joystick/static/media/interact_button.c74b3aa3ef14e8beb551.svg",
     "static/media/linePipe.svg": "/joystick/static/media/linePipe.74ab6032e254a6ed3ccfac20343e5dbc.svg",
     "main.23cd1dcc.css.map": "/joystick/static/css/main.23cd1dcc.css.map",
-    "main.5a452f32.js.map": "/joystick/static/js/main.5a452f32.js.map",
+    "main.cec1fb1d.js.map": "/joystick/static/js/main.cec1fb1d.js.map",
     "453.c937b24c.chunk.js.map": "/joystick/static/js/453.c937b24c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23cd1dcc.css",
-    "static/js/main.5a452f32.js"
+    "static/js/main.cec1fb1d.js"
   ]
 }
