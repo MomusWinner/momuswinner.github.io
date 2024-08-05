@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/joystick/static/css/main.6bd0d9d1.css",
-    "main.js": "/joystick/static/js/main.65922c9f.js",
+    "main.css": "/joystick/static/css/main.e5667a9e.css",
+    "main.js": "/joystick/static/js/main.5ad580b8.js",
     "static/js/453.c937b24c.chunk.js": "/joystick/static/js/453.c937b24c.chunk.js",
     "static/media/against _rabbits.png": "/joystick/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
     "static/media/left-controller-panel.svg": "/joystick/static/media/left-controller-panel.e1f2df2fd7719ed36069.svg",
     "static/media/right-controller-panel.svg": "/joystick/static/media/right-controller-panel.b4a2eea64639738268b3.svg",
     "static/media/return-to-joystick.svg": "/joystick/static/media/return-to-joystick.1c36380de350b1d2814f.svg",
-    "static/media/endPipe.svg": "/joystick/static/media/endPipe.5eacdb8fe558c0d8ee94392297403bd1.svg",
+    "static/media/endPipe.svg": "/joystick/static/media/endPipe.338a150c38bc33dbfac3766f23432823.svg",
     "index.html": "/joystick/index.html",
-    "static/media/curvePipe.svg": "/joystick/static/media/curvePipe.c82a64566c9dbbc727e0a0268fc26507.svg",
+    "static/media/curvePipe.svg": "/joystick/static/media/curvePipe.e80d924aa3619c243351fbe6caa895e9.svg",
     "static/media/left-slider.svg": "/joystick/static/media/left-slider.2317380255a0e6a281aa.svg",
     "static/media/right_button.svg": "/joystick/static/media/right_button.271bf5f29f30586094eb.svg",
     "static/media/left_button.svg": "/joystick/static/media/left_button.9c908d280391ab1fc417.svg",
     "static/media/interact_button.svg": "/joystick/static/media/interact_button.c74b3aa3ef14e8beb551.svg",
-    "static/media/linePipe.svg": "/joystick/static/media/linePipe.74ab6032e254a6ed3ccfac20343e5dbc.svg",
-    "main.6bd0d9d1.css.map": "/joystick/static/css/main.6bd0d9d1.css.map",
-    "main.65922c9f.js.map": "/joystick/static/js/main.65922c9f.js.map",
+    "static/media/linePipe.svg": "/joystick/static/media/linePipe.4743b4856ba308cea3a1068baa85927c.svg",
+    "main.e5667a9e.css.map": "/joystick/static/css/main.e5667a9e.css.map",
+    "main.5ad580b8.js.map": "/joystick/static/js/main.5ad580b8.js.map",
     "453.c937b24c.chunk.js.map": "/joystick/static/js/453.c937b24c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bd0d9d1.css",
-    "static/js/main.65922c9f.js"
+    "static/css/main.e5667a9e.css",
+    "static/js/main.5ad580b8.js"
   ]
 }
