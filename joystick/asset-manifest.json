@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/joystick/static/css/main.c45e831a.css",
-    "main.js": "/joystick/static/js/main.a6201860.js",
+    "main.css": "/joystick/static/css/main.250d1aaa.css",
+    "main.js": "/joystick/static/js/main.618180fe.js",
     "static/js/453.c937b24c.chunk.js": "/joystick/static/js/453.c937b24c.chunk.js",
     "static/media/changeOrientationBackground.svg": "/joystick/static/media/changeOrientationBackground.c0889a5da1aa23b15c9a.svg",
     "static/media/against _rabbits.png": "/joystick/static/media/against _rabbits.45a9e0f04fa86189e4cf.png",
@@ -16,12 +16,12 @@
     "static/media/left_button.svg": "/joystick/static/media/left_button.9c908d280391ab1fc417.svg",
     "static/media/interact_button.svg": "/joystick/static/media/interact_button.c74b3aa3ef14e8beb551.svg",
     "static/media/linePipe.svg": "/joystick/static/media/linePipe.4743b4856ba308cea3a1068baa85927c.svg",
-    "main.c45e831a.css.map": "/joystick/static/css/main.c45e831a.css.map",
-    "main.a6201860.js.map": "/joystick/static/js/main.a6201860.js.map",
+    "main.250d1aaa.css.map": "/joystick/static/css/main.250d1aaa.css.map",
+    "main.618180fe.js.map": "/joystick/static/js/main.618180fe.js.map",
     "453.c937b24c.chunk.js.map": "/joystick/static/js/453.c937b24c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c45e831a.css",
-    "static/js/main.a6201860.js"
+    "static/css/main.250d1aaa.css",
+    "static/js/main.618180fe.js"
   ]
 }
