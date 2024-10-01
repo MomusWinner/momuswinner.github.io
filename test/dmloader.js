@@ -69,8 +69,8 @@ var CUSTOM_PARAMETERS = {
         }
         prevInnerWidth = innerWidth;
         prevInnerHeight = innerHeight;
-        var width = 1080;
-        var height = 1920;
+        var width = 960;
+        var height = 640;
         var targetRatio = width / height;
         var actualRatio = innerWidth / innerHeight;
     
@@ -209,8 +209,8 @@ var FileLoader = {
 
 
 var EngineLoader = {
-    wasm_size: 2374239,
-    wasmjs_size: 340441,
+    wasm_size: 2831423,
+    wasmjs_size: 340433,
     asmjs_size: 4000000,
     wasm_instantiate_progress: 0,
 
@@ -1019,7 +1019,7 @@ Module["locateFile"] = function(path, scriptDirectory)
     // dmengine*.wasm is hardcoded in the built JS loader for WASM,
     // we need to replace it here with the correct project name.
     if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
-        path = "RepairCable.wasm";
+        path = "TestRequest.wasm";
     }
     return scriptDirectory + path;
 };
