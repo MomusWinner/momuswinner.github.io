@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>TestRequest 1.0</title>
+	<title>machinist_touch_test 1.0</title>
 	<style type='text/css'>
 	/* Disable user selection to avoid strange bug in Chrome on Windows:
 	* Selecting a text outside the canvas, then clicking+draging would
@@ -160,7 +160,7 @@
 			<p>WebGL is not supported by your browser - visit <a href="https://get.webgl.org/">https://get.webgl.org/</a> to learn more.</p>
 		</div>
 		<div id="canvas-container" class="canvas-app-canvas-container">
-			<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="960" height="640"></canvas>
+			<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1920" height="1080"></canvas>
 		</div>
 		<div class="buttons-background">
 			<div class="button" onclick="Module.toggleFullscreen();">Fullscreen</div>
@@ -176,7 +176,7 @@
 			runningFromFileWarning.style.display = "block";
 		}
 		else {
-			EngineLoader.load("canvas", "TestRequest");
+			EngineLoader.load("canvas", "machinist_touch_test");
 			runningFromFileWarning.parentNode.removeChild(runningFromFileWarning);
 		}
 	</script>
