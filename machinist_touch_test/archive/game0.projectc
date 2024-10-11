@@ -5,11 +5,12 @@ write_log = 0
 compress_archive = 1
 publisher = unnamed
 developer = unnamed
+custom_resources = /shapes
 title_as_file_name = machinist_touch_test
 
 [display]
-width = 960
-height = 640
+width = 1920
+height = 1080
 high_dpi = 0
 samples = 0
 fullscreen = 0
@@ -49,7 +50,7 @@ velocity_threshold = 1
 max_fixed_timesteps = 2
 
 [bootstrap]
-main_collection = /example/example.collectionc
+main_collection = /main/main.collectionc
 render = /builtins/render/default.renderc
 
 [graphics]

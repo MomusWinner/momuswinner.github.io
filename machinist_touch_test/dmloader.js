@@ -69,8 +69,8 @@ var CUSTOM_PARAMETERS = {
         }
         prevInnerWidth = innerWidth;
         prevInnerHeight = innerHeight;
-        var width = 960;
-        var height = 640;
+        var width = 1920;
+        var height = 1080;
         var targetRatio = width / height;
         var actualRatio = innerWidth / innerHeight;
     
