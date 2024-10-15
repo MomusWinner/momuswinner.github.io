@@ -9,9 +9,9 @@ custom_resources = /shapes
 title_as_file_name = machinist_touch_test
 
 [display]
-width = 1920
-height = 1080
-high_dpi = 0
+width = 844
+height = 390
+high_dpi = 1
 samples = 0
 fullscreen = 0
 update_frequency = 0
@@ -51,7 +51,7 @@ max_fixed_timesteps = 2
 
 [bootstrap]
 main_collection = /main/main.collectionc
-render = /builtins/render/default.renderc
+render = /orthographic/render/orthographic.renderc
 
 [graphics]
 default_texture_min_filter = linear

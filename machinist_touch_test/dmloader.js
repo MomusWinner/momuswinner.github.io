@@ -69,8 +69,8 @@ var CUSTOM_PARAMETERS = {
         }
         prevInnerWidth = innerWidth;
         prevInnerHeight = innerHeight;
-        var width = 1920;
-        var height = 1080;
+        var width = 844;
+        var height = 390;
         var targetRatio = width / height;
         var actualRatio = innerWidth / innerHeight;
     
@@ -98,6 +98,8 @@ var CUSTOM_PARAMETERS = {
     
     
         var dpi = 1;
+    
+        dpi = window.devicePixelRatio || 1;
     
         app_container.style.width = width + "px";
         app_container.style.height = height + buttonHeight + "px";
