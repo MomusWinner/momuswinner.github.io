@@ -361,7 +361,7 @@ function createWasm() {
   };
   function receiveInstance(instance, module) {
     wasmExports = instance.exports;
-    wasmTable = wasmExports["Th"];
+    wasmTable = wasmExports["Vh"];
     addOnInit(wasmExports["Qh"]);
     removeRunDependency("wasm-instantiate");
     return wasmExports;
@@ -384,14 +384,14 @@ function createWasm() {
 var tempDouble;
 var tempI64;
 var ASM_CONSTS = {
-  667440: function _() {
+  279216: function _() {
     if (navigator.userAgent.toLowerCase().indexOf("chrome") > -1) {
       console.log("%c    %c    Made with Defold    %c    %c    https://www.defold.com", "background: #fd6623; padding:5px 0; border: 5px;", "background: #272c31; color: #fafafa; padding:5px 0;", "background: #39a3e4; padding:5px 0;", "background: #ffffff; color: #000000; padding:5px 0;");
     } else {
       console.log("Made with Defold -=[ https://www.defold.com ]=-");
     }
   },
-  667868: function _($0) {
+  279644: function _($0) {
     var jsResult;
     var isSuccess = 1;
     try {
@@ -405,13 +405,13 @@ var ASM_CONSTS = {
     var stringOnWasmHeap = stringToNewUTF8(jsResult);
     return stringOnWasmHeap;
   },
-  668136: function _() {
+  279912: function _() {
     document.removeEventListener("click", Module.__defold_interaction_listener);
     document.removeEventListener("keyup", Module.__defold_interaction_listener);
     document.removeEventListener("touchend", Module.__defold_interaction_listener);
     Module.__defold_interaction_listener = undefined;
   },
-  668424: function _() {
+  280200: function _() {
     Module.__defold_interaction_listener = function () {
       _dmScript_RunInteractionCallback();
     };
@@ -419,10 +419,10 @@ var ASM_CONSTS = {
     document.addEventListener("keyup", Module.__defold_interaction_listener);
     document.addEventListener("touchend", Module.__defold_interaction_listener);
   },
-  668745: function _($0) {
+  280521: function _($0) {
     Module.printErr(UTF8ToString($0));
   },
-  668784: function _($0) {
+  280560: function _($0) {
     Module.print(UTF8ToString($0));
   }
 };
@@ -9907,10 +9907,10 @@ var _main = Module["_main"] = function (a0, a1) {
   return (_main = Module["_main"] = wasmExports["Sh"])(a0, a1);
 };
 var _malloc = Module["_malloc"] = function (a0) {
-  return (_malloc = Module["_malloc"] = wasmExports["Uh"])(a0);
+  return (_malloc = Module["_malloc"] = wasmExports["Th"])(a0);
 };
 var _free = Module["_free"] = function (a0) {
-  return (_free = Module["_free"] = wasmExports["Vh"])(a0);
+  return (_free = Module["_free"] = wasmExports["Uh"])(a0);
 };
 var _htonl2 = function _htonl(a0) {
   return (_htonl2 = wasmExports["Wh"])(a0);
