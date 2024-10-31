@@ -1,16 +1,15 @@
 [project]
-title = machinist_touch_test
-version = 1.0.2
+title = figure_search
+version = 1.0
 write_log = 0
 compress_archive = 1
 publisher = unnamed
 developer = unnamed
-custom_resources = /shapes
-title_as_file_name = machinist_touch_test
+title_as_file_name = figure_search
 
 [display]
-width = 844
-height = 390
+width = 1060
+height = 1900
 high_dpi = 1
 samples = 0
 fullscreen = 0
@@ -22,10 +21,10 @@ dynamic_orientation = 0
 display_device_info = 0
 
 [render]
-clear_color_red = 0
-clear_color_green = 0
-clear_color_blue = 0
-clear_color_alpha = 0
+clear_color_red = 0.1
+clear_color_green = 0.1
+clear_color_blue = 0.1
+clear_color_alpha = 1.0
 
 [physics]
 type = 2D

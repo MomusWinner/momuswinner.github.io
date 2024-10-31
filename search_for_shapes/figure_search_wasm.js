@@ -294,7 +294,7 @@ var isFileURI = function isFileURI(filename) {
   return filename.startsWith("file://");
 };
 var wasmBinaryFile;
-wasmBinaryFile = "dmengine.wasm";
+wasmBinaryFile = "dmengine_release.wasm";
 if (!isDataURI(wasmBinaryFile)) {
   wasmBinaryFile = locateFile(wasmBinaryFile);
 }
@@ -384,14 +384,14 @@ function createWasm() {
 var tempDouble;
 var tempI64;
 var ASM_CONSTS = {
-  279216: function _() {
+  277608: function _() {
     if (navigator.userAgent.toLowerCase().indexOf("chrome") > -1) {
       console.log("%c    %c    Made with Defold    %c    %c    https://www.defold.com", "background: #fd6623; padding:5px 0; border: 5px;", "background: #272c31; color: #fafafa; padding:5px 0;", "background: #39a3e4; padding:5px 0;", "background: #ffffff; color: #000000; padding:5px 0;");
     } else {
       console.log("Made with Defold -=[ https://www.defold.com ]=-");
     }
   },
-  279644: function _($0) {
+  278036: function _($0) {
     var jsResult;
     var isSuccess = 1;
     try {
@@ -405,13 +405,13 @@ var ASM_CONSTS = {
     var stringOnWasmHeap = stringToNewUTF8(jsResult);
     return stringOnWasmHeap;
   },
-  279912: function _() {
+  278304: function _() {
     document.removeEventListener("click", Module.__defold_interaction_listener);
     document.removeEventListener("keyup", Module.__defold_interaction_listener);
     document.removeEventListener("touchend", Module.__defold_interaction_listener);
     Module.__defold_interaction_listener = undefined;
   },
-  280200: function _() {
+  278592: function _() {
     Module.__defold_interaction_listener = function () {
       _dmScript_RunInteractionCallback();
     };
@@ -419,10 +419,10 @@ var ASM_CONSTS = {
     document.addEventListener("keyup", Module.__defold_interaction_listener);
     document.addEventListener("touchend", Module.__defold_interaction_listener);
   },
-  280521: function _($0) {
+  278913: function _($0) {
     Module.printErr(UTF8ToString($0));
   },
-  280560: function _($0) {
+  278952: function _($0) {
     Module.print(UTF8ToString($0));
   }
 };
@@ -5507,63 +5507,6 @@ var getHeapMax = function getHeapMax() {
 var _emscripten_get_heap_max = function _emscripten_get_heap_max() {
   return getHeapMax();
 };
-var webgl_enable_ANGLE_instanced_arrays = function webgl_enable_ANGLE_instanced_arrays(ctx) {
-  var ext = ctx.getExtension("ANGLE_instanced_arrays");
-  if (ext) {
-    ctx["vertexAttribDivisor"] = function (index, divisor) {
-      return ext["vertexAttribDivisorANGLE"](index, divisor);
-    };
-    ctx["drawArraysInstanced"] = function (mode, first, count, primcount) {
-      return ext["drawArraysInstancedANGLE"](mode, first, count, primcount);
-    };
-    ctx["drawElementsInstanced"] = function (mode, count, type, indices, primcount) {
-      return ext["drawElementsInstancedANGLE"](mode, count, type, indices, primcount);
-    };
-    return 1;
-  }
-};
-var webgl_enable_OES_vertex_array_object = function webgl_enable_OES_vertex_array_object(ctx) {
-  var ext = ctx.getExtension("OES_vertex_array_object");
-  if (ext) {
-    ctx["createVertexArray"] = function () {
-      return ext["createVertexArrayOES"]();
-    };
-    ctx["deleteVertexArray"] = function (vao) {
-      return ext["deleteVertexArrayOES"](vao);
-    };
-    ctx["bindVertexArray"] = function (vao) {
-      return ext["bindVertexArrayOES"](vao);
-    };
-    ctx["isVertexArray"] = function (vao) {
-      return ext["isVertexArrayOES"](vao);
-    };
-    return 1;
-  }
-};
-var webgl_enable_WEBGL_draw_buffers = function webgl_enable_WEBGL_draw_buffers(ctx) {
-  var ext = ctx.getExtension("WEBGL_draw_buffers");
-  if (ext) {
-    ctx["drawBuffers"] = function (n, bufs) {
-      return ext["drawBuffersWEBGL"](n, bufs);
-    };
-    return 1;
-  }
-};
-var webgl_enable_WEBGL_draw_instanced_base_vertex_base_instance = function webgl_enable_WEBGL_draw_instanced_base_vertex_base_instance(ctx) {
-  return !!(ctx.dibvbi = ctx.getExtension("WEBGL_draw_instanced_base_vertex_base_instance"));
-};
-var webgl_enable_WEBGL_multi_draw_instanced_base_vertex_base_instance = function webgl_enable_WEBGL_multi_draw_instanced_base_vertex_base_instance(ctx) {
-  return !!(ctx.mdibvbi = ctx.getExtension("WEBGL_multi_draw_instanced_base_vertex_base_instance"));
-};
-var webgl_enable_WEBGL_multi_draw = function webgl_enable_WEBGL_multi_draw(ctx) {
-  return !!(ctx.multiDrawWebgl = ctx.getExtension("WEBGL_multi_draw"));
-};
-var getEmscriptenSupportedExtensions = function getEmscriptenSupportedExtensions(ctx) {
-  var supportedExtensions = ["ANGLE_instanced_arrays", "EXT_blend_minmax", "EXT_disjoint_timer_query", "EXT_frag_depth", "EXT_shader_texture_lod", "EXT_sRGB", "OES_element_index_uint", "OES_fbo_render_mipmap", "OES_standard_derivatives", "OES_texture_float", "OES_texture_half_float", "OES_texture_half_float_linear", "OES_vertex_array_object", "WEBGL_color_buffer_float", "WEBGL_depth_texture", "WEBGL_draw_buffers", "EXT_color_buffer_float", "EXT_conservative_depth", "EXT_disjoint_timer_query_webgl2", "EXT_texture_norm16", "NV_shader_noperspective_interpolation", "WEBGL_clip_cull_distance", "EXT_color_buffer_half_float", "EXT_depth_clamp", "EXT_float_blend", "EXT_texture_compression_bptc", "EXT_texture_compression_rgtc", "EXT_texture_filter_anisotropic", "KHR_parallel_shader_compile", "OES_texture_float_linear", "WEBGL_blend_func_extended", "WEBGL_compressed_texture_astc", "WEBGL_compressed_texture_etc", "WEBGL_compressed_texture_etc1", "WEBGL_compressed_texture_s3tc", "WEBGL_compressed_texture_s3tc_srgb", "WEBGL_debug_renderer_info", "WEBGL_debug_shaders", "WEBGL_lose_context", "WEBGL_multi_draw"];
-  return (ctx.getSupportedExtensions() || []).filter(function (ext) {
-    return supportedExtensions.includes(ext);
-  });
-};
 var GL = {
   counter: 1,
   buffers: [],
@@ -5643,9 +5586,6 @@ var GL = {
     };
     if (ctx.canvas) ctx.canvas.GLctxObject = context;
     GL.contexts[handle] = context;
-    if (typeof webGLContextAttributes.enableExtensionsByDefault == "undefined" || webGLContextAttributes.enableExtensionsByDefault) {
-      GL.initExtensions(context);
-    }
     return handle;
   },
   makeContextCurrent: function makeContextCurrent(contextHandle) {
@@ -5668,29 +5608,6 @@ var GL = {
       GL.contexts[contextHandle].GLctx.canvas.GLctxObject = undefined;
     }
     GL.contexts[contextHandle] = null;
-  },
-  initExtensions: function initExtensions(context) {
-    context || (context = GL.currentContext);
-    if (context.initExtensionsDone) return;
-    context.initExtensionsDone = true;
-    var GLctx = context.GLctx;
-    webgl_enable_ANGLE_instanced_arrays(GLctx);
-    webgl_enable_OES_vertex_array_object(GLctx);
-    webgl_enable_WEBGL_draw_buffers(GLctx);
-    webgl_enable_WEBGL_draw_instanced_base_vertex_base_instance(GLctx);
-    webgl_enable_WEBGL_multi_draw_instanced_base_vertex_base_instance(GLctx);
-    if (context.version >= 2) {
-      GLctx.disjointTimerQueryExt = GLctx.getExtension("EXT_disjoint_timer_query_webgl2");
-    }
-    if (context.version < 2 || !GLctx.disjointTimerQueryExt) {
-      GLctx.disjointTimerQueryExt = GLctx.getExtension("EXT_disjoint_timer_query");
-    }
-    webgl_enable_WEBGL_multi_draw(GLctx);
-    getEmscriptenSupportedExtensions(GLctx).forEach(function (ext) {
-      if (!ext.includes("lose_context") && !ext.includes("debug")) {
-        GLctx.getExtension(ext);
-      }
-    });
   }
 };
 var _glActiveTexture = function _glActiveTexture(x0) {
@@ -6341,6 +6258,12 @@ var writeI53ToI64 = function writeI53ToI64(ptr, num) {
   HEAPU32[ptr >> 2] = num;
   var lower = HEAPU32[ptr >> 2];
   HEAPU32[ptr + 4 >> 2] = (num - lower) / 4294967296;
+};
+var getEmscriptenSupportedExtensions = function getEmscriptenSupportedExtensions(ctx) {
+  var supportedExtensions = ["ANGLE_instanced_arrays", "EXT_blend_minmax", "EXT_disjoint_timer_query", "EXT_frag_depth", "EXT_shader_texture_lod", "EXT_sRGB", "OES_element_index_uint", "OES_fbo_render_mipmap", "OES_standard_derivatives", "OES_texture_float", "OES_texture_half_float", "OES_texture_half_float_linear", "OES_vertex_array_object", "WEBGL_color_buffer_float", "WEBGL_depth_texture", "WEBGL_draw_buffers", "EXT_color_buffer_float", "EXT_conservative_depth", "EXT_disjoint_timer_query_webgl2", "EXT_texture_norm16", "NV_shader_noperspective_interpolation", "WEBGL_clip_cull_distance", "EXT_color_buffer_half_float", "EXT_depth_clamp", "EXT_float_blend", "EXT_texture_compression_bptc", "EXT_texture_compression_rgtc", "EXT_texture_filter_anisotropic", "KHR_parallel_shader_compile", "OES_texture_float_linear", "WEBGL_blend_func_extended", "WEBGL_compressed_texture_astc", "WEBGL_compressed_texture_etc", "WEBGL_compressed_texture_etc1", "WEBGL_compressed_texture_s3tc", "WEBGL_compressed_texture_s3tc_srgb", "WEBGL_debug_renderer_info", "WEBGL_debug_shaders", "WEBGL_lose_context", "WEBGL_multi_draw"];
+  return (ctx.getSupportedExtensions() || []).filter(function (ext) {
+    return supportedExtensions.includes(ext);
+  });
 };
 var webglGetExtensions = function $webglGetExtensions() {
   var exts = getEmscriptenSupportedExtensions(GLctx);
@@ -7904,6 +7827,57 @@ var _emscripten_set_main_loop_arg = function _emscripten_set_main_loop_arg(func,
   };
   setMainLoop(browserIterationFunc, fps, simulateInfiniteLoop, arg);
 };
+var webgl_enable_ANGLE_instanced_arrays = function webgl_enable_ANGLE_instanced_arrays(ctx) {
+  var ext = ctx.getExtension("ANGLE_instanced_arrays");
+  if (ext) {
+    ctx["vertexAttribDivisor"] = function (index, divisor) {
+      return ext["vertexAttribDivisorANGLE"](index, divisor);
+    };
+    ctx["drawArraysInstanced"] = function (mode, first, count, primcount) {
+      return ext["drawArraysInstancedANGLE"](mode, first, count, primcount);
+    };
+    ctx["drawElementsInstanced"] = function (mode, count, type, indices, primcount) {
+      return ext["drawElementsInstancedANGLE"](mode, count, type, indices, primcount);
+    };
+    return 1;
+  }
+};
+var webgl_enable_OES_vertex_array_object = function webgl_enable_OES_vertex_array_object(ctx) {
+  var ext = ctx.getExtension("OES_vertex_array_object");
+  if (ext) {
+    ctx["createVertexArray"] = function () {
+      return ext["createVertexArrayOES"]();
+    };
+    ctx["deleteVertexArray"] = function (vao) {
+      return ext["deleteVertexArrayOES"](vao);
+    };
+    ctx["bindVertexArray"] = function (vao) {
+      return ext["bindVertexArrayOES"](vao);
+    };
+    ctx["isVertexArray"] = function (vao) {
+      return ext["isVertexArrayOES"](vao);
+    };
+    return 1;
+  }
+};
+var webgl_enable_WEBGL_draw_buffers = function webgl_enable_WEBGL_draw_buffers(ctx) {
+  var ext = ctx.getExtension("WEBGL_draw_buffers");
+  if (ext) {
+    ctx["drawBuffers"] = function (n, bufs) {
+      return ext["drawBuffersWEBGL"](n, bufs);
+    };
+    return 1;
+  }
+};
+var webgl_enable_WEBGL_draw_instanced_base_vertex_base_instance = function webgl_enable_WEBGL_draw_instanced_base_vertex_base_instance(ctx) {
+  return !!(ctx.dibvbi = ctx.getExtension("WEBGL_draw_instanced_base_vertex_base_instance"));
+};
+var webgl_enable_WEBGL_multi_draw_instanced_base_vertex_base_instance = function webgl_enable_WEBGL_multi_draw_instanced_base_vertex_base_instance(ctx) {
+  return !!(ctx.mdibvbi = ctx.getExtension("WEBGL_multi_draw_instanced_base_vertex_base_instance"));
+};
+var webgl_enable_WEBGL_multi_draw = function webgl_enable_WEBGL_multi_draw(ctx) {
+  return !!(ctx.multiDrawWebgl = ctx.getExtension("WEBGL_multi_draw"));
+};
 var _emscripten_webgl_enable_extension = function _emscripten_webgl_enable_extension(contextHandle, extension) {
   var context = GL.getContext(contextHandle);
   var extString = UTF8ToString(extension);
@@ -9344,14 +9318,6 @@ var stringToUTF8OnStack = function stringToUTF8OnStack(str) {
   stringToUTF8(str, ret, size);
   return ret;
 };
-function jsStackTrace() {
-  return new Error().stack.toString();
-}
-function stackTrace() {
-  var js = jsStackTrace();
-  if (Module["extraStackTrace"]) js += "\n" + Module["extraStackTrace"]();
-  return js;
-}
 var getCFunc = function getCFunc(ident) {
   var func = Module["_" + ident];
   return func;
@@ -9400,6 +9366,14 @@ var ccall = function ccall(ident, returnType, argTypes, args, opts) {
   ret = onDone(ret);
   return ret;
 };
+function jsStackTrace() {
+  return new Error().stack.toString();
+}
+function stackTrace() {
+  var js = jsStackTrace();
+  if (Module["extraStackTrace"]) js += "\n" + Module["extraStackTrace"]();
+  return js;
+}
 FS.createPreloadedFile = FS_createPreloadedFile;
 FS.staticInit();
 Module["requestFullscreen"] = Browser.requestFullscreen;
@@ -9900,11 +9874,11 @@ var wasmExports = createWasm();
 var _wasm_call_ctors = function ___wasm_call_ctors() {
   return (_wasm_call_ctors = wasmExports["Qh"])();
 };
-var _dmExportedSymbols = Module["_dmExportedSymbols"] = function () {
-  return (_dmExportedSymbols = Module["_dmExportedSymbols"] = wasmExports["Rh"])();
-};
 var _main = Module["_main"] = function (a0, a1) {
-  return (_main = Module["_main"] = wasmExports["Sh"])(a0, a1);
+  return (_main = Module["_main"] = wasmExports["Rh"])(a0, a1);
+};
+var _dmExportedSymbols = Module["_dmExportedSymbols"] = function () {
+  return (_dmExportedSymbols = Module["_dmExportedSymbols"] = wasmExports["Sh"])();
 };
 var _malloc = Module["_malloc"] = function (a0) {
   return (_malloc = Module["_malloc"] = wasmExports["Th"])(a0);
@@ -9945,11 +9919,11 @@ var _stackRestore = function stackRestore(a0) {
 var _stackAlloc = function stackAlloc(a0) {
   return (_stackAlloc = wasmExports["ei"])(a0);
 };
-var dynCall_jii = Module["dynCall_jii"] = function (a0, a1, a2) {
-  return (dynCall_jii = Module["dynCall_jii"] = wasmExports["fi"])(a0, a1, a2);
-};
 var dynCall_ji = Module["dynCall_ji"] = function (a0, a1) {
-  return (dynCall_ji = Module["dynCall_ji"] = wasmExports["gi"])(a0, a1);
+  return (dynCall_ji = Module["dynCall_ji"] = wasmExports["fi"])(a0, a1);
+};
+var dynCall_jii = Module["dynCall_jii"] = function (a0, a1, a2) {
+  return (dynCall_jii = Module["dynCall_jii"] = wasmExports["gi"])(a0, a1, a2);
 };
 function invoke_vii(index, a1, a2) {
   var sp = _stackSave();
