@@ -87,7 +87,7 @@ game_binding = /input/game.input_bindingc
 use_accelerometer = 1
 
 [sprite]
-max_count = 128
+max_count = 256
 subpixels = 1
 
 [model]
@@ -157,7 +157,7 @@ app_icon =
 [html5]
 custom_heap_size = 0
 heap_size = 256
-htmlfile = /template/template.html
+htmlfile = /platform-sdk/template/engine_template.html
 cssfile = /builtins/manifests/web/dark_theme.css
 splash_image = /logo/logo.png
 archive_location_prefix = archive
